@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <title>EVA!</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="menuPrincipal" class="navbar navbar-expand-lg navbar-light  fixed-top ">
+
+             <a  class="navbar-brand text-white " href="#"> <i class="fas fa-comments-dollar "></i>  EVA </a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active scroll text-white " href="#definicao">Definição <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-link scroll text-white" href="#utilizar">Como utilizar</a>
+                    <a class="nav-link scroll text-white" href="#teste">Realizar teste</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <div id="definicao" class="box-item">
+                <h3 class="display-4">O que é Economic Value Added (EVA)</h3>
+               <p class="lead content"> O Economic Value Added (EVA) é o lucro econômico que uma empresa obteve em determinado período. Também chamado de valor econômico agregado, o EVA mede o desempenho financeiro da empresa com base na riqueza que ela efetivamente criou, após se deduzir o custo do capital investido do seu lucro operacional.</p>
+            </div>
+
+
+            <div id="utilizar" class="box-item">
+                <h3 class="display-4">Como podemos calcular ?</h3>
+                <p class="lead">o EVA é responsavel por mostrar se um investimento trouxe ganhos reais para os acionistas, ou seja, se está gerando valor para a empresa</p>
+                <img id="img1" src="img1.png" alt="">
+            </div>
+
+            <div id="teste" class="box-item">
+                <div id="formulario">
+                    <form  id="form" >
+                      <h3 class="display-4">Preencha os campos para calcular seu EVA</h3>
+                        <div class="form-row form-group col-md-7 mx-auto">
+                          <label for="formGroupExampleInput">Digite aqui a sua receita</label>
+                          <input onkeyup="formatarMoeda()" type="text" class="form-control" id="receita" placeholder="Ex: R$ 1000">
+                        </div>
+                        <div class=" form-row form-group col-md-7 mx-auto">
+                          <label for="formGroupExampleInput2">Digite aqui o seu investimento</label>
+                          <input onkeyup="formatarMoedaInv()" type="text" class="form-control" id="investimento" placeholder="Ex: R$ 3000">
+                        </div>
+              
+                        <div class="form-row form-group col-md-7 mx-auto">
+                          <label for="formGroupExampleInput">Informe a TMA desejada</label>
+                          <input onfocusout="formatarPorcTma()" type="text" class="form-control" id="tma" placeholder="Ex: 10% a.a">
+                        </div>
+
+                        <div class="form-row form-group col-md-7 mx-auto">
+                            <label for="formGroupExampleInput">Resultado do EVA:</label>
+                            <input disabled id="resultado" type="text" class="form-control "  placeholder="">
+                          </div>
+                        
+                        <div class="col text-center">
+                            <button type="button" class="btn btn-success mx-auto" onclick="pegarValor()">
+                                Calcular
+                              </button>
+                        </div>
+
+                        
+                        
+                    </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="logica.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+        
+
+</body>
+
+</html>

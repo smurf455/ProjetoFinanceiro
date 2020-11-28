@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #f2f2f2;
+  }
+
+  #menuPrincipal {
+      background-color: #4CAF50;
+  }
+
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-item {
+ height: 100vh; 
+ width: 60vw;
+ transition: 2s ease;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 30px;
+ margin: 0 0 5px 0;
+ justify-content: center;
+ color: rgb(89, 166, 89)
+ 
+}
+
+#img1 {
+    background: url("img1.png") no-repeat ;
+    background-size: contain;
+}
+
+.content {
+    font-size: 23px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+#resultado { 
+    
+    margin: 0 auto;
+}
