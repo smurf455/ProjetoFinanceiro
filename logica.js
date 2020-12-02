@@ -13,6 +13,7 @@ function pegarValor() {
 }
 
 function calcular(receita, investimento, tma) {
+    tma = tma/100
     var resultado = (receita - investimento) - investimento * tma
     return resultado
 }
